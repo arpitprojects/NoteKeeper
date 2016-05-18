@@ -1,0 +1,74 @@
+<div class="container">
+    <div class="row">
+        <div class="col s6 m6 l6 offset-s3 offset-m3 offset-l3">
+            <center>
+                <h4>{{title}}</h4>
+                <br><br>
+            </center>
+            <form name="form">
+                <div class="input-field col s12">
+                    <input id="login" type="text" name="username" ng-model="username" class="validate" ng-required="true">
+                    <label for="login">Username:</label>
+                    <span ng-show="form.username.$invalid && form.username.$touched">*This is required</span>
+                </div>
+                <br/>
+                <br/>
+                <div class="input-field col s12">
+                    <input id="password" type="password" name="password" ng-model="password" class="validate" ng-required="true">
+                    <label for="password">Password:</label>
+                    <span ng-show="form.password.$invalid && form.password.$touched">*This is required</span>
+                    <br/>
+                    <br/>
+                <button id="bttn" ng-click="submit()" ng-disabled="form.$invalid"  class="btn waves-effect waves-light">Let's Go</button>
+                <br/>
+                </div>
+            </form>
+            <br/>
+            <br/><br/>
+            <div class="info">
+                <h5><hr/></h5>
+                <div class="chip">
+                    <p>Username  : alice@yy.com</p>
+                    <p>Password : 123456789</p>
+                </div>
+                
+                <br>
+                <br/>
+                <div class="chip">
+                    <p>Username  : bob@yy.com</p>
+                    <p>Password : 123456789</p>
+                </div>
+                <br/>
+                <br/>
+                <div class="chip">
+                    <p>Username  : charlie@yy.com</p>
+                    <p>Password : 123456789</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer</h5>
+                <p class="grey-text text-lighten-4">Some Ramdom Text</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text"></h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Design Bids</a></li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">Design Bids</a>
+            </div>
+          </div>
+        </footer>

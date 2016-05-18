@@ -1,0 +1,97 @@
+body{
+    font-family: 'Lato' , 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+nav{
+    background-color: #2962ff;
+}
+#logo{
+    float:left;
+    position: relative;
+    left: -1000px;
+    top: 9px;
+    font-family: 'Ubuntu' , sans-serif;
+}
+/*Color for the froms */
+
+/* label color */
+   .input-field label , textarea label {
+     color: #2962ff;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #2962ff;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus , textarea:focus {
+     border-bottom: 1px solid #2962ff;
+     box-shadow: 0 1px 0 0 #2962ff;
+   }
+   .input-field input[type=password]:focus {
+     border-bottom: 1px solid #2962ff;
+     box-shadow: 0 1px 0 0 #2962ff;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #2962ff;
+     box-shadow: 0 1px 0 0 #2962ff;
+   }
+    .input-field input[type=password].valid {
+     border-bottom: 1px solid #2962ff;
+     box-shadow: 0 1px 0 0 #2962ff;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid red;
+     box-shadow: 0 1px 0 0 red;
+   }
+    .input-field input[type=password].invalid {
+     border-bottom: 1px solid red;
+     box-shadow: 0 1px 0 0 red;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #2962ff;
+   }
+      
+.btn , .btn:hover , .btn:active , .btn:visited , .btn:link {
+    background-color: #2962ff;
+    
+}
+span{
+    color:red;
+}
+.info h5{
+    font-family: 'Lato';
+    font-size:18px;
+    font-weight:400;
+}
+.info p{
+    font-family: 'Lato';
+    font-size:15px;
+    font-weight:bold;
+}
+#bttn{
+    margin-bottom:25px;
+}
+#button_logout{
+    position: relative;
+    left: 1000px;
+    top: -35px;
+    color:white;
+}
+.card .card-content .card-title{
+    color:#22baa0;
+}
+.red{
+    background-color: red !important;
+}
+.green{
+    background-color:green!important;
+}
+.orange{
+    background-color:orange!important;   
+}
+footer{
+    background-color: #2962ff !important;
+}

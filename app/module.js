@@ -1,0 +1,1 @@
+var newApp = angular.module('design_bids' , ['ngRoute' , 'firebase' , 'ngStorage']);

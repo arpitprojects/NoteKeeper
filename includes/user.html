@@ -1,0 +1,106 @@
+<br/>
+<div class="container">
+    <div class="row">
+        <div class="col s12 l12 m12">
+            <center>
+                <div class="chip">
+                 {{title}}
+                </div>
+             </center>
+            <button id="button_logout" class="chip btn waves-effect waves-light" ng-click="logout()">Logout Here</button>
+        </div>
+    </div>
+</div>
+<div ng-show="showing">
+<div class="container">
+    <div class="row">
+        <div class="col s8 l8 m8 offset-m2 offset-l2 offset-s2">
+            <form name="noteForm">
+                <div class="input-field col s12">
+                    <input name="title1" maxlength="15" length="15" ng-maxlength="15" ng-model="title1" id="title1" type="text" class="validate" ng-required="true">
+                    <span ng-show="noteForm.title1.$invalid && noteForm.title1.$touched">*This is required</span>
+                    <label for="title1">Title : </label>
+                </div>
+                <br/>
+                 <div class="input-field col s12">
+                    <!--<i class="fa fa-pencil"></i>-->
+                    <textarea maxlength="50" ng-maxlength="50" id="textarea1" length="50" name="message" ng-model="message" class="materialize-textarea" ng-required="true"></textarea>
+                    <label for="textarea1">Message : </label>
+                    <span ng-show="noteForm.message.$invalid && noteForm.message.$touched">*This is required</span>
+                    
+                    <br/>
+                    
+                    </div>
+                    <button class="btn waves-effect waves-light" ng-disabled="noteForm.$invalid"  ng-click="submitit()">Submit</button>
+                    
+                </div>
+                <br/>
+            </form>
+            
+            <br/><br/>
+            <center>
+                <br/><br/>
+                <br/><br/><br/><br/>
+                <div ng-show="showdel">
+                   <br/> 
+                <div class="chip">SELECT POSTS FROM DOWN AND CLICK THIS </p>
+                <br/>
+             <button class="btn waves-effect waves-light" ng-click="mul()">Multiple Delete</button>
+                </div>
+            </center>
+        </div>
+          <br/>
+    </div>
+
+<br/><br/>
+<div class="container">
+    <div class="row">
+        <div class="col s12 m3 l3" ng-repeat="note in noting | limitTo : limiting">
+          <div  id="{{note.title1}}" class="card">
+            <div class="card-content white-text">
+              <span class="card-title">{{note.title1}}</span>
+              <p style="color:black">{{note.messsage}}</p>
+            </div>
+            <div class="card-action">
+              <a class="waves-effect waves-light" ng-click="delete(note)";>Delete</a>
+              <a class="waves-effet waves-light" ng-click="edit(note)";>Update</a>
+              <br/>
+            </div>
+           <center> <p> Assign Priority</p>
+           <br/>
+            <input ng-click="red(note)" name="{{note.title1}}r"  type="radio" id="{{note.title1}}red" />
+            <label for="{{note.title1}}red">1</label>
+            <input ng-click="orange(note)" name="{{note.title1}}r"  type="radio" id="{{note.title1}}orange"/>
+            <label for="{{note.title1}}orange">2</label>
+            <input ng-click="green(note)" name="{{note.title1}}r"  type="radio" id="{{note.title1}}green"/>
+            <label for="{{note.title1}}green">3</label>
+            <br/><br/>
+            <form>
+                
+                <input type="checkbox" ng-click="multiple_del(note)" id="{{note.messsage}}" />
+                <label for="{{note.messsage}}">Multiple delete</label>
+            </form>
+            
+            </center>
+            
+          </div>
+          
+        </div>
+      </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <center>
+                <div class="chip">{{alert}}</div>
+                <br/><br/>
+                <button class="btn waves-effect waves-light" ng-click="load()">Load More <i class="fa fa-spinner fa-spin"></i></button>
+                
+            </center>
+        </div>
+    </div>
+</div>
+</div>
+
+
+       

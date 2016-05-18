@@ -1,0 +1,11 @@
+{
+  "name": "designbids_challenge",
+  "version": "1.0.0",
+  "description": "This is a programming challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arpit anand <arpit.engghelp@gmail.com>",
+  "license": "MIT"
+}

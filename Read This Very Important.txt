@@ -1,0 +1,22 @@
+1.)This project does not emphasis on using the separate database for the user for sake of simplicity. GOOGLE FIREBASE IS used for the authentication
+system.
+
+
+/*READ THIS POINT VERY IMPORTANT*/
+
+2.)RUNNING inde.html directly will not work and 
+Use live-server or http-server
+You can install it as npm install live-server 
+
+and specify the folder in the command line like 
+c:\wamp\www\designBids_challenge\live-server
+
+A new tab will be open in the DEFAULT BROWSER - > 127.0.0.1:8080
+
+
+
+
+ 3.)NO SEPARATE DATABSE FILE OR SQL/MONGODB IS needed . AS FIREBASE AND NG-STORAGE IS USED in this project.
+ SO, only 2nd step is important.
+ 
+4.)DETAIL ABOUT THE PROJECT IS IN README.md file
